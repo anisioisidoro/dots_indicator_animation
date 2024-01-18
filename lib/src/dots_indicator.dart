@@ -80,7 +80,8 @@ class DotsIndicator extends StatelessWidget {
       lerpValue,
     )!;
 
-    final dot = Container(
+    final dot = AnimatedContainer(
+      duration: Duration(microseconds: 300000),
       width: size.width,
       height: size.height,
       margin: decorator.spacing,
